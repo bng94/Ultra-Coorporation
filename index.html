@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ultra Corporation - Brandon Ng</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script>
+  function purchaseMsg(num){
+    var str = document.getElementById(`prod`+num).innerHTML;
+    var msg = str.substring(20,str.length);
+    alert(msg);
+  }
+</script>
+<div class="navbar">
+  <h1 class="navTitle"><a class="linkTitle" href="#">Ultra Corporation</a></h1>
+  <ul class="links">
+    <li><a href=#about>About</a>
+    <li><a href=#products>Products</a>
+    <li><a href="http://www.pace.edu">Pace</a>
+  </ul>
+</div>
+<div id="about">
+  <br><br>
+  <div class="animated">
+    <h1>Ultra Corporation</h1>
+  </div>
+  <p>We have is what everyone seeks, the rarest and hardest items to come by. One of a kind items! <br><br>You have to learn the rules of the game. And then you have to play better than anyone else.</p>
+</div>
+<div class="container" id="products">
+  <div>
+    <h2>Apple</h2>
+    <img class="products" src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Apple"><br>
+    <p id="prod1"><b>Description:</b> Apple a day keeps the doctor away! </p>
+    <p class="itemPrice"><b>Price:</b> $1.00 <button onclick="purchaseMsg(1)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Pear</h2>
+    <img class="products" src="https://4.imimg.com/data4/UA/CL/ANDROID-46992190/product-500x500.jpeg" alt="Pear"><br>
+    <p id="prod2"><b>Description:</b> Pears are in the same family as apples. </p>
+    <p class="itemPrice"><b>Price:</b> $1.25 <button onclick="purchaseMsg(2)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Orange</h2>
+    <img class="products" src="https://www.marlerblog.com/files/2013/03/orange.jpg" alt="Orange"><br>
+    <p id="prod3"><b>Description:</b> Orange is the new black. </p>
+    <p class="itemPrice"><b>Price:</b> $1.50 <button onclick="purchaseMsg(3)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Mijolnir</h2>
+    <img class="products" src="https://images-na.ssl-images-amazon.com/images/I/51VLrYRkpHL._AC_SX425_.jpg" alt="Mjolnir"><br>
+    <p id="prod4"><b>Description:</b> Thor's Magic Hammer. </p>
+    <p class="itemPrice"><b>Price:</b> $10.00 <button onclick="purchaseMsg(4)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Captain America's Shield</h2>
+    <img class="products" src="https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/1280x1280/products/303544/431403/apigkiutz__17595.1564591336.jpg?c=2&imbypass=on" alt="Captain America's Shield"><br>
+    <p id="prod5"><b>Description:</b> Indestructible. I can do this all day. </p>
+    <p class="itemPrice"><b>Price:</b> $10.00 <button onclick="purchaseMsg(5)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Infinity Gauntlet</h2>
+    <img class="products" src="https://i.ebayimg.com/images/g/LCAAAOSwg95d23Li/s-l640.jpg" alt="Infinity Gauntlet"><br>
+    <p id="prod6"><b>Description:</b> I am Inevitable. </p>
+    <p class="itemPrice"><b>Price:</b> $100.00 <button onclick="purchaseMsg(6)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Flash's Ring</h2>
+    <img class="products" src="https://images-na.ssl-images-amazon.com/images/I/51RdsGr3XPL._AC_UY395_.jpg" alt="Flash's Ring"><br>
+    <p id="prod7"><b>Description:</b> When you stop trying to force the solution, it'll happen on its own. </p>
+    <p class="itemPrice"><b>Price:</b> $15.00 <button onclick="purchaseMsg(7)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Green Lantern's Ring</h2>
+    <img class="products" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSJ9aX5ShY_aRqspiYd_Gb8cRJmvAj-DNouQZ9OpzzSxf4fBcH7sNPAbcimLA0Z9ZjgE2VpT-0I4nUV2fP0ZQErqPdAb_3yqU--V2IMguJxjUdqle__HnAO&usqp=CAE" alt="Green Lanter's Ring"><br>
+    <p id="prod8"><b>Description:</b> In brightest day, in blackest night, No evil shall escape my sight. Let those who worship evil's might Beware my power--Green Lantern's light! </p>
+    <p class="itemPrice"><b>Price:</b> $50.00 <button onclick="purchaseMsg(8)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Kryptonite</h2>
+    <img class="products" src="https://www.guidingexceptionalparents.com/wp-content/uploads/2017/01/kryptonite-guiding-exceptional-parents-sarah-wayland.jpg" alt="Kryptonite"><br>
+    <p id="prod9"><b>Description:</b> The power to kill a god. </p>
+    <p class="itemPrice"><b>Price:</b> $1.00 <button onclick="purchaseMsg(9)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Sonic Screwdriver</h2>
+    <img class="products" src="https://i5.walmartimages.com/asr/0a48dc4e-2f7c-466d-affb-c7e8a5d0d798_1.3654a526999f47fc5b1f4c29e9351d82.jpeg?odnWidth=450&odnHeight=450&odnBg=ffffff" alt="Sonic Screwdriver"><br>
+    <p id="prod10"><b>Description:</b> Unlock any locks and doors as long as its not deadlock sealed. </p>
+    <p class="itemPrice"><b>Price:</b> $20.00 <button onclick="purchaseMsg(10)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>Vortex Manipulator</h2>
+    <img class="products" src="https://images-na.ssl-images-amazon.com/images/I/71Ez9wlBUNL._UL1500_.jpg" alt="Vortex Manipulator"><br>
+    <p id="prod11"><b>Description:</b> Transport the user through time and space via the Time Vortex. </p>
+    <p class="itemPrice"><b>Price:</b> $10.00 <button onclick="purchaseMsg(11)"> Purchase </button></p>
+  </div>
+  <div>
+    <h2>T.A.R.D.I.S</h2>
+    <img class="products" src="https://target.scene7.com/is/image/Target/GUEST_73f629db-39f0-4b19-a1f8-fd4d83fe1d5a?wid=488&hei=488&fmt=pjpeg" alt="TARDIS"><br>
+    <p id="prod12"><b>Description:</b> Time And Relative Dimension In Space. It Means Life! </p>
+    <p class="itemPrice"><b>Price:</b> $1,000.00 <button onclick="purchaseMsg(12)"> Purchase </button></p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+@media screen and (max-width: 1000px){
+  div.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+  }
+  img.products {
+    width: 200px;
+    height: 200px;
+  }
+  div.navbar {
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    position: absolute;
+  }
+  ul.links {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px){
+  img.products {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes magicBox {
+  0%   {
+    background-color: red;
+  }
+  50%  {
+    background-color: yellow;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+body {
+   background-image: linear-gradient(to right, rgb(0, 51, 102), rgb(0, 204, 255));
+   min-width: 200px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-gap: 25px;
+  grid-auto-rows: minmax(200px, auto);
+  justify-items: stretch;
+  align-items: stretch;
+}
+.container div{
+  border-radius: 25px;
+  background-color: #003399;
+  min-width: 230px;
+  font-size: 20px;
+  box-shadow: 5px 5px 15px 5px #66ffff;
+  text-align: center;
+}
+
+.products {
+  width: 300px;
+  height: 300px;
+}
+
+#about {
+  text-align: center;
+}
+.navbar {
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  background-color: #333
+}
+.navTitle{
+  display: inline;
+  text-align: left;
+  width: 50%;
+}
+.links {
+  right: 0;
+  display: inline-block;
+  text-align: right;
+  width: 80%;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a.linkTitle {
+  text-decoration: none;
+  color: white;
+}
+a.linkTitle:hover{
+  color: green;
+}
+
+li {
+  display:inline-block;
+}
+
+li a{
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: red;
+}
+
+.animated {
+  background-color: cyan;
+  border: 1px solid black;
+  width: 200px;
+  height: 125px;
+  text-align: center;
+  margin: auto;
+  animation-name: magicBox;
+  animation-duration: 15s;
+}
